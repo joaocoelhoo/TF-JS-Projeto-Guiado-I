@@ -78,15 +78,15 @@ Para começar a praticar, siga estes passos:
 
 Certifique-se de seguir cada passo cuidadosamente para garantir que suas contribuições sejam integradas ao repositório original.
 
-- [ ] **Fork do Repositório:**
-   - [ ] Acesse o repositório de [origem](https://github.com/afrocodigos/TF-JS-Projeto-Guiado-I).
-   - [ ] No canto superior direito da página, clique no botão "Fork" para criar uma cópia do repositório para sua conta.
+- [x] **Fork do Repositório:**
+   - [x] Acesse o repositório de [origem](https://github.com/afrocodigos/TF-JS-Projeto-Guiado-I).
+   - [x] No canto superior direito da página, clique no botão "Fork" para criar uma cópia do repositório para sua conta.
 
-- [ ] **Clone do Fork na Sua Máquina:**
-   - [ ] No seu perfil do GitHub, acesse o fork do repositório que você acabou de criar.
-   - [ ] Clique no botão verde "Code" e copie o URL fornecido.
-   - [ ] Abra o terminal ou prompt de comando no diretório onde deseja clonar o repositório.
-   - [ ] Execute o comando `git clone URL-do-seu-fork`.
+- [x] **Clone do Fork na Sua Máquina:**
+   - [x] No seu perfil do GitHub, acesse o fork do repositório que você acabou de criar.
+   - [x] Clique no botão verde "Code" e copie o URL fornecido.
+   - [x] Abra o terminal ou prompt de comando no diretório onde deseja clonar o repositório.
+   - [x] Execute o comando `git clone URL-do-seu-fork`.
 
 - [ ] **Prepare-se para as Mudanças:**
    - [ ] Navegue para o diretório do projeto usando o comando `cd nome-do-repositório` ou abra a pasta de forma visual.
