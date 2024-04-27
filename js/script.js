@@ -1,15 +1,9 @@
-// -------- CRUD =>
+// -------- CRUD ---------
 let estoque = [];
 let proximoId = 1;
 
 //CRIAR 
-function adicionarNovoProduto(){
-    const nome = document.getElementById("nome").value;
-    const quantidade = document.getElementById("quantidade").value;
-    const preco = document.getElementById("preco").value;
-    const descricao = document.getElementById("descricao").value;
-    const listaProdutos = document.getElementById("lista-produtos");
-
+function adicionarNovoProduto(nome, quantidade, preco, descricao){
     let produto = {
         id: proximoId++,
         nome: nome,
@@ -18,18 +12,9 @@ function adicionarNovoProduto(){
         descricao: descricao
     }
     estoque.push(produto)
-    let conteudoLista = document.createElement("li");
-    conteudoLista.innerText = `Nome: ${nome}, Quantidade: ${quantidade}, Preço: ${preco}, Descrição: 
-    ${descricao}`
-    listaProdutos.appendChild(conteudoLista);
-
 };
-// adicionarProduto("Nissan Kicks", "1", "145000", "Exclusive");
-// adicionarProduto("Garrafa", "30", "1000", "Garraja Azul");
-
-
-
-// console.log(estoque)
+adicionarNovoProduto("Nissan Kicks", "1", "145000", "Exclusive");
+adicionarNovoProduto("Garrafa", "30", "1000", "Garrafa Azul");
 
 //LER
 function listarProduto(){
@@ -38,7 +23,7 @@ function listarProduto(){
         console.log(produto)
     }
 };
-// listarProduto()
+listarProduto()
 
 //ATUALIZAR
 function atualizarProduto(id, informacaoAtualizada){
@@ -50,9 +35,9 @@ function atualizarProduto(id, informacaoAtualizada){
     }
 };
 
-// atualizarProduto(2, {
-//     nome: 'Roda',
-// });
+atualizarProduto(2, {
+    nome: 'Roda',
+});
 
 listarProduto()
 
@@ -62,14 +47,11 @@ function removerProdutos(id){
     for(let index = 0; estoque.length; index++){
         if(estoque[index].id === id){
             let removerProdutos = estoque.splice(index, 1)
-            console.log("removeuuuu", removerProdutos)
+            console.log("removendo produto", removerProdutos)
             return;
         }
     }
 }
 
-// let novoProduto = adicionarProduto("Nissan Kicks", "1", "145000", "Exclusive");
-// let novoProduto2 = adicionarProduto("Garrafa", "30", "1000", "Garraja Azul");
-// listarProduto()
-// removerProdutos(2)
-// listarProduto()
+removerProdutos(2)
+listarProduto()
